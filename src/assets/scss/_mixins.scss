@@ -1,0 +1,118 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px,
+  xxl: 1366px,
+) !default;
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%,
+  xxl: 1566px,
+) !default;
+
+$grid-gutter-width: 30;
+
+@mixin screen-up($screen) {
+  @if (map-has-key($grid-breakpoints, $screen)) {
+    $screen: map-get($grid-breakpoints, $screen);
+  }
+
+  @media (min-width: $screen) {
+    @content;
+  }
+}
+
+@mixin screen-down($screen) {
+  @if (map-has-key($grid-breakpoints, $screen)) {
+    $screen: map-get($grid-breakpoints, $screen);
+  }
+
+  @media (max-width: $screen - 1) {
+    @content;
+  }
+}
+
+@mixin screen-between($from, $to) {
+  @if (map-has-key($grid-breakpoints, $from)) {
+    $from: map-get($grid-breakpoints, $from);
+  }
+
+  @if (map-has-key($grid-breakpoints, $to)) {
+    $to: map-get($grid-breakpoints, $to);
+  }
+
+  @media (min-width: $from) and (max-width: $to - 1) {
+    @content;
+  }
+}
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+
+  @return if($min != 0, $min, null);
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@each $breakpoint, $container-max-width in $container-max-widths {
+  @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+    %responsive-container-#{$breakpoint} {
+      max-width: $container-max-width;
+    }
+  }
+}
+
+// For each breakpoint, define the maximum width of the container in a media query
+@mixin make-container-max-widths(
+  $max-widths: $container-max-widths,
+  $breakpoints: $grid-breakpoints
+) {
+  @each $breakpoint, $container-max-width in $max-widths {
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      max-width: $container-max-width;
+    }
+  }
+}
+
+@mixin make-container($gutter: $grid-gutter-width) {
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-right: auto;
+  margin-left: auto;
+
+  // @include screen-up('md') {
+  //   padding-right: 30px;
+  //   padding-left: 30px;
+  // }
+}
+
+@mixin hover-focus-active {
+  &:hover,
+  &:focus,
+  &:active {
+    @content;
+  }
+}
+
+@mixin focus-active {
+  &:focus,
+  &:active {
+    @content;
+  }
+}

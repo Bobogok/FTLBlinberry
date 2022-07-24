@@ -1,0 +1,17 @@
+@import '_fonts';
+@import '_reset';
+@import '_vars';
+@import '_global';
+@import '_libs';
+
+.header {
+}
+
+.section {
+}
+
+.footer {
+}
+
+// применяется последней
+@import '_media';
