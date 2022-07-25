@@ -1,9 +1,13 @@
 import React from 'react';
-import Layout from './layout/Layout';
+import Layout from './layout';
 import './assets/scss/style.scss';
 
 function App() {
-  return <Layout>yeeees</Layout>;
+  return (
+    <div className="container">
+      <Layout></Layout>
+    </div>
+  );
 }
 
 export default App;

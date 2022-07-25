@@ -1,12 +1,26 @@
+@import 'vars';
+
 * {
   font-family: Inter;
 }
 
-html,
 body {
-  // height: 100%;
-  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  min-width: 320px;
+  color: $black;
+  position: relative;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+  // font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 // .main {
@@ -42,7 +56,7 @@ body {
 }
 
 .container {
-  padding-left: 121px;
-  padding-right: 121px;
   max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
 }
