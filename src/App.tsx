@@ -4,7 +4,7 @@ import './assets/scss/style.scss';
 
 function App() {
   return (
-    <div className="container">
+    <div>
       <Layout></Layout>
     </div>
   );
