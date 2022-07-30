@@ -7,7 +7,8 @@ const Banner = () => {
       <div className="banner__inner container">
         <div className="banner__top">
           <h1 className="banner__title">
-            Открой свой Блинбери, получай прибыль и стань частью большой истории
+            Открой свой Блинбери, получай прибыль <br /> и стань частью большой
+            истории
           </h1>
           <button className="banner__button">
             <span>Оставить заявку</span>
