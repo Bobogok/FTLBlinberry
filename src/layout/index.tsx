@@ -57,7 +57,7 @@ const Layout = ({ children }: any) => {
         </div>
       </header>
 
-      <main className="container">{children}</main>
+      <main>{children}</main>
 
       <footer className="footer">
         <div className="footer__inner container">

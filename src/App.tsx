@@ -1,11 +1,14 @@
 import React from 'react';
 import Layout from './layout';
+import Banner from './components/Banner';
 import './assets/scss/style.scss';
 
 function App() {
   return (
     <div>
-      <Layout></Layout>
+      <Layout>
+        <Banner />
+      </Layout>
     </div>
   );
 }
