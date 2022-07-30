@@ -1,7 +1,16 @@
 import React from 'react';
-import MainLogo from '../assets/img/svg/Logo.svg';
-import TelegramHeader from '../assets/img/svg/social/TelegramHeader.svg';
-import AppStore from '../assets/img/svg/social/appStore.svg';
+import MainLogoIcon from '../assets/img/svg/Logo.svg';
+import TelegramHeaderIcon from '../assets/img/svg/social/TelegramHeader.svg';
+import ArrowRightIcon from '../assets/img/svg/arrowRight.svg';
+import AppStoreIcon from '../assets/img/svg/social/appStore.svg';
+import GooglePlayIcon from '../assets/img/svg/social/googlePlay.svg';
+import HuaweiStoreIcon from '../assets/img/svg/social/huaweiStore.svg';
+import MailIcon from '../assets/img/svg/social/mailIcon.svg';
+import TelegramWhiteIcon from '../assets/img/svg/social/telegramWhite.svg';
+
+import VkBlackIcon from '../assets/img/svg/social/vkBlack.svg';
+import TelegramBlackIcon from '../assets/img/svg/social/telegramBlack.svg';
+import YoutubeBlackIcon from '../assets/img/svg/social/youtubeBlack.svg';
 import './layout.scss';
 
 const Layout = ({ children }: any) => {
@@ -11,7 +20,7 @@ const Layout = ({ children }: any) => {
         <div className="header__inner container">
           {/* лого */}
           <div className="header__logo-wrapper">
-            <MainLogo />
+            <MainLogoIcon />
           </div>
 
           {/* меню дексктоп */}
@@ -19,22 +28,22 @@ const Layout = ({ children }: any) => {
             <ul className="header__menu-elems">
               <li className="header__menu-elem">
                 <a className="header__menu-link" href="#">
-                  этапы открытия
+                  <span>этапы открытия</span>
                 </a>
               </li>
               <li className="header__menu-elem">
                 <a className="header__menu-link" href="#">
-                  форматы
+                  <span>форматы</span>
                 </a>
               </li>
               <li className="header__menu-elem">
                 <a className="header__menu-link active" href="#">
-                  достижения
+                  <span>достижения</span>
                 </a>
               </li>
               <li className="header__menu-elem">
                 <a className="header__menu-link" href="#">
-                  новости
+                  <span>новости</span>
                 </a>
               </li>
             </ul>
@@ -43,7 +52,7 @@ const Layout = ({ children }: any) => {
           {/* кнопка хедера */}
           <button className="header__button">
             <span>контакты и поддержка</span>
-            <TelegramHeader className="header__button-icon" />
+            <TelegramHeaderIcon className="header__button-icon" />
           </button>
         </div>
       </header>
@@ -62,12 +71,13 @@ const Layout = ({ children }: any) => {
               />
             </div>
             <div className="footer__apps">
-              <button className="footer__apps-button">Приложение</button>
-              <div className="footer__apps-apple">
-                <AppStore />
-              </div>
-              <div className="footer__apps-google"></div>
-              <div className="footer__apps-huawei"></div>
+              <button className="footer__apps-button">
+                <span>Приложение</span>
+                <ArrowRightIcon className="footer__apps-button-icon" />
+              </button>
+              <AppStoreIcon className="footer__apps-icon" />
+              <GooglePlayIcon className="footer__apps-icon" />
+              <HuaweiStoreIcon className="footer__apps-icon" />
             </div>
           </div>
 
@@ -119,15 +129,25 @@ const Layout = ({ children }: any) => {
           <div className="footer__contacts">
             <div className="footer__phone-number">8 (937) 533-38-17</div>
             <div className="footer__mails">
-              <div className="footer__mails-email">
-                franchising@blinbery.team
-              </div>
-              <div className="footer__mails-telegram">@blinberry</div>
+              <a href="" className="footer__mails-link">
+                <MailIcon />
+                <span>franchising@blinbery.team</span>
+              </a>
+              <a href="" className="footer__mails-link">
+                <TelegramWhiteIcon />
+                <span>@blinberry</span>
+              </a>
             </div>
             <div className="footer__buttons">
-              <button className="footer__button-vk"></button>
-              <button className="footer__button-telegram"></button>
-              <button className="footer__button-youtube"></button>
+              <button className="footer__button">
+                <VkBlackIcon />
+              </button>
+              <button className="footer__button">
+                <TelegramBlackIcon />
+              </button>
+              <button className="footer__button">
+                <YoutubeBlackIcon />
+              </button>
             </div>
           </div>
 
