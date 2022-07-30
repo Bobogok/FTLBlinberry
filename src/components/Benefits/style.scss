@@ -1,0 +1,40 @@
+@import '../../assets/scss/_vars.scss';
+
+.benefits {
+  // bem
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $graybgc;
+
+  &__inner {
+    padding-left: 188px;
+    padding-right: 188px;
+  }
+
+  &__elems {
+  }
+
+  &__elem {
+    &:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: $grayText;
+  }
+}

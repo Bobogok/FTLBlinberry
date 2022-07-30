@@ -3,6 +3,7 @@ import Layout from './layout';
 import Banner from './components/Banner';
 import Terms from './components/Terms';
 import Formats from './components/Formats';
+import Benefits from './components/Benefits';
 import './assets/scss/style.scss';
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
 
         {/* блок форматов */}
         <Formats />
+
+        {/* блок плющек */}
+        <Benefits />
       </Layout>
     </div>
   );

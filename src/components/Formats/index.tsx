@@ -18,18 +18,24 @@ const Formats = () => {
       <div className="formats__subtitle">Выбери вариант для своего города</div>
       <div className="formats__items">
         <div className="formats__item">
-          <img src="./formatS.jpg" alt="" className="formats__image" />
-          <LabelSIcon className="formats__icon" />
+          <div className="formats__image-wrapper">
+            <img src="./formatS.jpg" alt="" className="formats__image" />
+            <LabelSIcon className="formats__icon" />
+          </div>
           <div className="formats__item-title">Малый</div>
         </div>
         <div className="formats__item">
-          <img src="./formatM.jpg" alt="" className="formats__image" />
-          <LabelMIcon className="formats__icon" />
+          <div className="formats__image-wrapper">
+            <img src="./formatM.jpg" alt="" className="formats__image" />
+            <LabelMIcon className="formats__icon" />
+          </div>
           <div className="formats__item-title">Средний</div>
         </div>
         <div className="formats__item">
-          <img src="./formatL.jpg" alt="" className="formats__image" />
-          <LabelLIcon className="formats__icon" />
+          <div className="formats__image-wrapper">
+            <img src="./formatL.jpg" alt="" className="formats__image" />
+            <LabelLIcon className="formats__icon" />
+          </div>
           <div className="formats__item-title">Большой</div>
         </div>
       </div>

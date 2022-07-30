@@ -60,7 +60,8 @@ main {
 
 .container {
   max-width: calc(1280px + (60px * 2));
-  padding: 0px 60px;
+  padding-right: 60px;
+  padding-left: 60px;
   margin-right: auto;
   margin-left: auto;
 }

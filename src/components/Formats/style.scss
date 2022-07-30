@@ -2,8 +2,8 @@
 
 .formats {
   // bem
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
   &__top {
     display: flex;
@@ -47,14 +47,17 @@
   }
 
   &__item {
+  }
+
+  &__image-wrapper {
+    position: relative;
     height: 580px;
     width: 100%;
-    position: relative;
+    margin-bottom: 36px;
   }
 
   &__image {
     object-fit: cover;
-    margin-bottom: 36px;
     height: 100%;
     width: 100%;
   }
