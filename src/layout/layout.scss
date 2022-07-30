@@ -35,7 +35,7 @@
     padding: 16px 32px;
 
     &:not(:last-child) {
-      margin-right: 16px;
+      margin-right: 17px;
     }
   }
 
@@ -48,6 +48,7 @@
   }
 
   &__menu-link {
+    display: block;
     position: relative;
 
     &.active {
@@ -57,33 +58,29 @@
         height: 2px;
         background-color: $main;
         position: absolute;
-        bottom: -2px;
+        bottom: -3px;
       }
     }
   }
 
   &__button {
-    letter-spacing: -0.022em;
-    padding: 18.5px 64px 18.5px 32px;
+    display: flex;
+    align-items: center;
+    padding: 14px 32px;
     position: relative;
     background-color: $white;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 1px 5px rgba(0, 0, 0, 0.2);
     border-radius: 16px;
 
-    &:before {
-      content: '';
-      width: 24px;
-      height: 24px;
-      position: absolute;
-      right: 32px;
-      top: 50%;
-      transform: translateY(-30%);
-      background: {
-        image: url('../assets/img/svg/social/TelegramHeader.svg');
-        repeat: no-repeat;
-        size: 21px 18px;
-      }
+    span {
+      position: relative;
+      top: -3px;
     }
+  }
+
+  &__button-icon {
+    display: inline;
+    margin-left: 10px;
   }
 }
 
@@ -97,6 +94,8 @@
 
   &__top {
     display: flex;
+    padding: 24px 0px;
+    align-items: center;
   }
 
   &__logo {
@@ -107,6 +106,7 @@
 
   &__apps {
     display: flex;
+    align-items: center;
   }
 
   &__apps-button {
@@ -116,6 +116,7 @@
     padding: 20px 48px 20px 16px;
     color: $black;
     position: relative;
+    margin-right: 32px;
 
     &::before {
       // добавить иконку

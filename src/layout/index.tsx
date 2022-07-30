@@ -1,5 +1,7 @@
 import React from 'react';
-import logo from '../assets/img/svg/Logo.svg';
+import MainLogo from '../assets/img/svg/Logo.svg';
+import TelegramHeader from '../assets/img/svg/social/TelegramHeader.svg';
+import AppStore from '../assets/img/svg/social/appStore.svg';
 import './layout.scss';
 
 const Layout = ({ children }: any) => {
@@ -9,7 +11,7 @@ const Layout = ({ children }: any) => {
         <div className="header__inner container">
           {/* лого */}
           <div className="header__logo-wrapper">
-            <img className="header__logo" src={logo} alt="Logo" />
+            <MainLogo />
           </div>
 
           {/* меню дексктоп */}
@@ -39,7 +41,10 @@ const Layout = ({ children }: any) => {
           </nav>
 
           {/* кнопка хедера */}
-          <button className="header__button">контакты и поддержка</button>
+          <button className="header__button">
+            <span>контакты и поддержка</span>
+            <TelegramHeader className="header__button-icon" />
+          </button>
         </div>
       </header>
 
@@ -58,7 +63,9 @@ const Layout = ({ children }: any) => {
             </div>
             <div className="footer__apps">
               <button className="footer__apps-button">Приложение</button>
-              <div className="footer__apps-apple"></div>
+              <div className="footer__apps-apple">
+                <AppStore />
+              </div>
               <div className="footer__apps-google"></div>
               <div className="footer__apps-huawei"></div>
             </div>
