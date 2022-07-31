@@ -7,6 +7,7 @@ import Benefits from './components/Benefits';
 import Grow from './components/Grow';
 import Achievements from './components/Achievements';
 import Partners from './components/Partners';
+import News from './components/News';
 import './assets/scss/style.scss';
 
 function App() {
@@ -35,6 +36,9 @@ function App() {
 
         {/* блок партнеров */}
         <Partners />
+
+        {/* блок yjdjcntq */}
+        <News />
       </Layout>
     </div>
   );
