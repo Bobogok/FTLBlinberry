@@ -5,6 +5,7 @@ import Terms from './components/Terms';
 import Formats from './components/Formats';
 import Benefits from './components/Benefits';
 import Grow from './components/Grow';
+import Achievements from './components/Achievements';
 import './assets/scss/style.scss';
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
 
         {/* блок роста */}
         <Grow />
+
+        {/* блок достижений */}
+        <Achievements />
       </Layout>
     </div>
   );
