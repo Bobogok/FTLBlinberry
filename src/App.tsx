@@ -9,6 +9,7 @@ import Achievements from './components/Achievements';
 import Partners from './components/Partners';
 import News from './components/News';
 import Circs from './components/Circs';
+import Flex from './components/Flex';
 import './assets/scss/style.scss';
 
 function App() {
@@ -43,6 +44,9 @@ function App() {
 
         {/* блок условий */}
         <Circs />
+
+        {/* блок гибкой работы */}
+        <Flex />
       </Layout>
     </div>
   );
