@@ -4,6 +4,7 @@ import Banner from './components/Banner';
 import Terms from './components/Terms';
 import Formats from './components/Formats';
 import Benefits from './components/Benefits';
+import Grow from './components/Grow';
 import './assets/scss/style.scss';
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
 
         {/* блок плющек */}
         <Benefits />
+
+        {/* блок роста */}
+        <Grow />
       </Layout>
     </div>
   );
