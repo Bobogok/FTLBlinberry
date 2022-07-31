@@ -18,7 +18,11 @@ const Achievements = () => {
           Наша команда любит новшества
         </div>
         <div className="achievements__elems">
-          <Swiper slidesPerView={'auto'} spaceBetween={24} className="mySwiper">
+          <Swiper
+            slidesPerView={'auto'}
+            spaceBetween={24}
+            className="achievementsSwiper"
+          >
             <SwiperSlide className="achievements__elem">
               <div className="achievements__elem-content">
                 В апреле 2012 года открыли первую блинную Блинбери в Волгограде

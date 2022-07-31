@@ -1,10 +1,6 @@
 @import '../../assets/scss/_vars.scss';
 
-.grow {
-  // bem
-  padding-top: 100px;
-  padding-bottom: 100px;
-
+.circs {
   &__inner {
   }
 
@@ -16,9 +12,6 @@
   }
 
   &__elems {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px 20px;
   }
 
   &__elem {
@@ -33,7 +26,7 @@
     letter-spacing: normal;
     font-weight: 700;
     font-size: 64px;
-    line-height: 77px;
+    line-height: 64px;
     margin-bottom: 8px;
     color: $main;
   }
@@ -57,8 +50,9 @@
     display: flex;
 
     span {
+      display: block;
       position: relative;
-      top: 1px;
+      top: 10px;
       font-weight: inherit;
       font-size: inherit;
       line-height: inherit;
@@ -67,4 +61,14 @@
       border-radius: 40px;
     }
   }
+}
+
+.circsSwiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: visible;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
 }

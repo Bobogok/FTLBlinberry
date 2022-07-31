@@ -19,7 +19,11 @@ const News = () => {
           Каждый день в жизни компании происходит что то новое
         </div>
         <div className="news__elems">
-          <Swiper slidesPerView={'auto'} spaceBetween={24} className="mySwiper">
+          <Swiper
+            slidesPerView={'auto'}
+            spaceBetween={24}
+            className="newsSwiper"
+          >
             <SwiperSlide className="news__elem">
               <div className="news__elem-top">
                 <img src="./news/RBK.jpg" alt="" className="news__elem-img" />

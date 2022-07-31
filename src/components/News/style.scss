@@ -60,6 +60,10 @@
     overflow: hidden;
     position: relative;
 
+    // &:first-child {
+    //   margin-left: 3px;
+    // }
+
     &:nth-child(1) {
       #{$block}__elem-button {
         background-color: #9fcfac;
@@ -201,7 +205,7 @@
   }
 }
 
-.swiper {
+.newsSwiper {
   width: calc(100% + 80px + 24px);
   max-width: calc(1440px - 80px);
   overflow: clip;
@@ -222,11 +226,4 @@
       rgba(255, 255, 255, 0) 100%
     );
   }
-}
-
-.swiper-slide:first-child {
-  margin-left: 3px;
-}
-
-.swiper-slide {
 }
