@@ -6,6 +6,7 @@ import Formats from './components/Formats';
 import Benefits from './components/Benefits';
 import Grow from './components/Grow';
 import Achievements from './components/Achievements';
+import Partners from './components/Partners';
 import './assets/scss/style.scss';
 
 function App() {
@@ -29,6 +30,11 @@ function App() {
 
         {/* блок достижений */}
         <Achievements />
+
+        {/* блок корусель */}
+
+        {/* блок партнеров */}
+        <Partners />
       </Layout>
     </div>
   );
