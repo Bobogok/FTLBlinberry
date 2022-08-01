@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/ftlblinberry/static/css/main.6f6e4a4a.css",
+    "main.js": "/ftlblinberry/static/js/main.35711818.js",
+    "static/media/DINRoundPro-Black.eot": "/ftlblinberry/static/media/DINRoundPro-Black.08f039d5106cd8267d24.eot",
+    "static/media/DINRoundPro-Black.ttf": "/ftlblinberry/static/media/DINRoundPro-Black.1096041ed1fb32baf97b.ttf",
+    "static/media/DINRoundPro-Bold.eot": "/ftlblinberry/static/media/DINRoundPro-Bold.f55b5bae5a6867538203.eot",
+    "static/media/DINRoundPro-Bold.ttf": "/ftlblinberry/static/media/DINRoundPro-Bold.bcebcb04c519b540f0f4.ttf",
+    "static/media/DINRoundPro-Medi.eot": "/ftlblinberry/static/media/DINRoundPro-Medi.d2f5c1d7ee91257c65f9.eot",
+    "static/media/DINRoundPro-Medi.ttf": "/ftlblinberry/static/media/DINRoundPro-Medi.fb1dda99bbe23c83e944.ttf",
+    "static/media/DINRoundPro.eot": "/ftlblinberry/static/media/DINRoundPro.8537e602b6e608c0a30a.eot",
+    "static/media/DINRoundPro.ttf": "/ftlblinberry/static/media/DINRoundPro.cc699676b202643b20a1.ttf",
+    "static/media/DINRoundPro-Light.eot": "/ftlblinberry/static/media/DINRoundPro-Light.b7478eed6fcf44952ddc.eot",
+    "static/media/DINRoundPro-Light.ttf": "/ftlblinberry/static/media/DINRoundPro-Light.2857e037e093d7f462e1.ttf",
+    "static/media/DINRoundPro-Bold.woff": "/ftlblinberry/static/media/DINRoundPro-Bold.d6f23f3b5cfd49330462.woff",
+    "static/media/DINRoundPro-Medi.woff": "/ftlblinberry/static/media/DINRoundPro-Medi.a355e375e39cd1c2bafd.woff",
+    "static/media/DINRoundPro-Black.woff": "/ftlblinberry/static/media/DINRoundPro-Black.8c5895577f52671ce72a.woff",
+    "static/media/DINRoundPro.woff": "/ftlblinberry/static/media/DINRoundPro.993efb998863b3c63122.woff",
+    "static/media/DINRoundPro-Light.woff": "/ftlblinberry/static/media/DINRoundPro-Light.4be74ff1ae2f9e5a1c5b.woff",
+    "static/media/DINRoundPro-Bold.woff2": "/ftlblinberry/static/media/DINRoundPro-Bold.61674554ee9a68e64d41.woff2",
+    "static/media/DINRoundPro-Medi.woff2": "/ftlblinberry/static/media/DINRoundPro-Medi.e52b143e585e6af79e73.woff2",
+    "static/media/DINRoundPro.woff2": "/ftlblinberry/static/media/DINRoundPro.2d9c4407b9e70b7fa673.woff2",
+    "static/media/DINRoundPro-Black.woff2": "/ftlblinberry/static/media/DINRoundPro-Black.2f739c5e64ef6fa6e5b1.woff2",
+    "static/media/DINRoundPro-Light.woff2": "/ftlblinberry/static/media/DINRoundPro-Light.b410b29d700a8bc43ef5.woff2",
+    "index.html": "/ftlblinberry/index.html",
+    "main.6f6e4a4a.css.map": "/ftlblinberry/static/css/main.6f6e4a4a.css.map",
+    "main.35711818.js.map": "/ftlblinberry/static/js/main.35711818.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f6e4a4a.css",
+    "static/js/main.35711818.js"
+  ]
+}
