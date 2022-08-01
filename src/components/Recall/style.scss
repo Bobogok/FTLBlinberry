@@ -1,0 +1,122 @@
+@import '../../assets/scss/_vars.scss';
+
+.recall {
+  // bem
+  padding-top: 100px;
+  padding-bottom: 74px;
+  background-color: $graybgc;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__left {
+    flex: 0 1 630px;
+    margin-right: 20px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    margin-bottom: 16px;
+  }
+
+  &__subtitle {
+    letter-spacing: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: $grayText;
+    margin-bottom: 32px;
+  }
+
+  &__right {
+    max-width: 522px;
+    min-height: 672px;
+  }
+
+  &__form {
+  }
+
+  &__input,
+  &__textarea {
+    padding: 22px 24px;
+    width: 100%;
+    background-color: $white;
+    border: 2px solid $grayInput;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    color: $black;
+    font-size: 24px;
+    line-height: 28px;
+
+    &::placeholder {
+      color: $grayInput;
+    }
+  }
+
+  &__textarea {
+    overflow: auto;
+    outline: none;
+    resize: none;
+    margin-bottom: 24px;
+    height: 148px;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    background-color: $main;
+    border-radius: 16px;
+    color: $white;
+
+    span {
+      font-weight: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 16px;
+    width: 88px;
+    height: 88px;
+  }
+
+  &__complete {
+    text-align: center;
+  }
+
+  &__complete-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 24px;
+  }
+
+  &__terms {
+    font-size: 12px;
+    color: $grayText;
+  }
+
+  &__link {
+    color: inherit;
+    font-size: inherit;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: $grayText;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+    }
+  }
+}

@@ -10,6 +10,7 @@ import Partners from './components/Partners';
 import News from './components/News';
 import Circs from './components/Circs';
 import Flex from './components/Flex';
+import Recall from './components/Recall';
 import './assets/scss/style.scss';
 
 function App() {
@@ -47,6 +48,9 @@ function App() {
 
         {/* блок гибкой работы */}
         <Flex />
+
+        {/* блок перезвона */}
+        <Recall />
       </Layout>
     </div>
   );
