@@ -6,6 +6,7 @@ import Formats from './components/Formats';
 import Benefits from './components/Benefits';
 import Grow from './components/Grow';
 import Achievements from './components/Achievements';
+import Carousel from './components/Carousel';
 import Partners from './components/Partners';
 import News from './components/News';
 import Circs from './components/Circs';
@@ -36,6 +37,7 @@ function App() {
         <Achievements />
 
         {/* блок корусель */}
+        <Carousel />
 
         {/* блок партнеров */}
         <Partners />
