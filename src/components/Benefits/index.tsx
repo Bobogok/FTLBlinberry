@@ -5,7 +5,7 @@ import './style.scss';
 const Benefits = () => {
   return (
     <div className="benefits">
-      <div className="benefits__inner">
+      <div className="benefits__inner container">
         <div className="benefits__elems">
           <div className="benefits__elem">
             <CorrectIcon className="benefits__icon" />
