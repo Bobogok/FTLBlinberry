@@ -1,14 +1,31 @@
-import React from 'react';
+import React, { useCallback, useRef } from 'react';
 import LeftArrowIcon from '../../assets/img/svg/carousel/leftArrow.svg';
 import RightArrowIcon from '../../assets/img/svg/carousel/rightArrow.svg';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { Pagination } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './style.scss';
 
+const CustomNavigation = ({ children }: any) => {
+  const swiper = useSwiper();
+  return (
+    <div className="carousel__right">
+      <div onClick={() => swiper.slidePrev()} className="carousel__left-icon">
+        <LeftArrowIcon />
+      </div>
+      {children}
+      <div onClick={() => swiper.slideNext()} className="carousel__right-icon">
+        <RightArrowIcon />
+      </div>
+    </div>
+  );
+};
+
 const Carousel = () => {
+  // const swiper = useSwiper();
+
   const pagination = {
     clickable: true,
     renderBullet: function (index: any, className: any) {
@@ -37,19 +54,13 @@ const Carousel = () => {
                 <span>Скачать мобильное приложение</span>
               </button>
             </div>
-            <div className="carousel__right">
-              <div className="carousel__left-icon">
-                <LeftArrowIcon />
-              </div>
+            <CustomNavigation>
               <img
                 src="https://via.placeholder.com/552x1120.jpg"
                 alt=""
                 className="carousel__image"
               />
-              <div className="carousel__right-icon">
-                <RightArrowIcon />
-              </div>
-            </div>
+            </CustomNavigation>
           </SwiperSlide>
           <SwiperSlide className="carousel__elem">
             <div className="carousel__left">
@@ -63,19 +74,13 @@ const Carousel = () => {
                 <span>Подпишись на наши новости</span>
               </button>
             </div>
-            <div className="carousel__right">
-              <div className="carousel__left-icon">
-                <LeftArrowIcon />
-              </div>
+            <CustomNavigation>
               <img
                 src="https://via.placeholder.com/552x1120.jpg"
                 alt=""
                 className="carousel__image"
               />
-              <div className="carousel__right-icon">
-                <RightArrowIcon />
-              </div>
-            </div>
+            </CustomNavigation>
           </SwiperSlide>
           <SwiperSlide className="carousel__elem">
             <div className="carousel__left">
@@ -88,19 +93,13 @@ const Carousel = () => {
                 <span>Подпишись на наши новости</span>
               </button>
             </div>
-            <div className="carousel__right">
-              <div className="carousel__left-icon">
-                <LeftArrowIcon />
-              </div>
+            <CustomNavigation>
               <img
                 src="https://via.placeholder.com/552x1120.jpg"
                 alt=""
                 className="carousel__image"
               />
-              <div className="carousel__right-icon">
-                <RightArrowIcon />
-              </div>
-            </div>
+            </CustomNavigation>
           </SwiperSlide>
           <SwiperSlide className="carousel__elem">
             <div className="carousel__left">
@@ -114,19 +113,13 @@ const Carousel = () => {
                 <span>Подпишись на наши новости</span>
               </button>
             </div>
-            <div className="carousel__right">
-              <div className="carousel__left-icon">
-                <LeftArrowIcon />
-              </div>
+            <CustomNavigation>
               <img
                 src="https://via.placeholder.com/552x1120.jpg"
                 alt=""
                 className="carousel__image"
               />
-              <div className="carousel__right-icon">
-                <RightArrowIcon />
-              </div>
-            </div>
+            </CustomNavigation>
           </SwiperSlide>
           <SwiperSlide className="carousel__elem">
             <div className="carousel__left">
@@ -141,19 +134,13 @@ const Carousel = () => {
                 <span>Подпишись на наши новости</span>
               </button>
             </div>
-            <div className="carousel__right">
-              <div className="carousel__left-icon">
-                <LeftArrowIcon />
-              </div>
+            <CustomNavigation>
               <img
                 src="https://via.placeholder.com/552x1120.jpg"
                 alt=""
                 className="carousel__image"
               />
-              <div className="carousel__right-icon">
-                <RightArrowIcon />
-              </div>
-            </div>
+            </CustomNavigation>
           </SwiperSlide>
           <SwiperSlide className="carousel__elem">
             <div className="carousel__left">
@@ -167,19 +154,13 @@ const Carousel = () => {
                 <span>Подпишись на наши новости</span>
               </button>
             </div>
-            <div className="carousel__right">
-              <div className="carousel__left-icon">
-                <LeftArrowIcon />
-              </div>
+            <CustomNavigation>
               <img
                 src="https://via.placeholder.com/552x1120.jpg"
                 alt=""
                 className="carousel__image"
               />
-              <div className="carousel__right-icon">
-                <RightArrowIcon />
-              </div>
-            </div>
+            </CustomNavigation>
           </SwiperSlide>
           <SwiperSlide className="carousel__elem">
             <div className="carousel__left">
@@ -193,19 +174,13 @@ const Carousel = () => {
                 <span>Скачать мобильное приложение</span>
               </button>
             </div>
-            <div className="carousel__right">
-              <div className="carousel__left-icon">
-                <LeftArrowIcon />
-              </div>
+            <CustomNavigation>
               <img
                 src="https://via.placeholder.com/552x1120.jpg"
                 alt=""
                 className="carousel__image"
               />
-              <div className="carousel__right-icon">
-                <RightArrowIcon />
-              </div>
-            </div>
+            </CustomNavigation>
           </SwiperSlide>
         </Swiper>
       </div>
