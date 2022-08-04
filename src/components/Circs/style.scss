@@ -13,6 +13,11 @@
     font-size: 64px;
     line-height: 77px;
     margin-bottom: 32px;
+
+    @media (max-width: 1024px) {
+      font-size: 48px;
+      line-height: 58px;
+    }
   }
 
   &__elems {
@@ -33,6 +38,11 @@
     line-height: 64px;
     margin-bottom: 8px;
     color: $main;
+
+    @media (max-width: 1024px) {
+      font-size: 48px;
+      line-height: 58px;
+    }
   }
 
   &__elem-subtitle {
@@ -43,6 +53,12 @@
     font-weight: 400;
     flex: 1 1 auto;
     margin-bottom: 26px;
+
+    @media (max-width: 1024px) {
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 32px;
+    }
   }
 
   &__elem-tag {
@@ -63,6 +79,10 @@
       padding: 16px 24px;
       background-color: $mainLight;
       border-radius: 40px;
+
+      @media (max-width: 1024px) {
+        top: 0px;
+      }
     }
   }
 }
@@ -75,4 +95,33 @@
   list-style: none;
   padding: 0;
   z-index: 1;
+
+  &::before {
+    content: '';
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    right: -2px;
+    height: 100%;
+    width: calc(80px + 24px);
+    background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+
+  @media (max-width: 1024px) {
+    width: calc(100% + 80px + 24px);
+    max-width: calc(1440px - 80px);
+    overflow: clip;
+    overflow-y: visible;
+    height: 100%;
+  }
+}
+
+.swiper-slide {
+  @media (max-width: 1024px) {
+    width: 424px;
+  }
 }

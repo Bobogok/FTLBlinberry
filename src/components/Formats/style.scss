@@ -16,6 +16,11 @@
     font-weight: 700;
     font-size: 64px;
     line-height: 77px;
+
+    @media (max-width: 1024px) {
+      font-size: 48px;
+      line-height: 58px;
+    }
   }
 
   &__button {
@@ -30,6 +35,10 @@
       font-size: inherit;
       line-height: inherit;
     }
+
+    @media (max-width: 1024px) {
+      padding: 16px 26px;
+    }
   }
 
   &__subtitle {
@@ -38,12 +47,20 @@
     color: $grayText;
     margin-bottom: 36px;
     letter-spacing: 0;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 32px;
+    }
   }
 
   &__items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 40px;
+
+    @media (max-width: 1024px) {
+      column-gap: 16px;
+    }
   }
 
   &__item {
@@ -54,6 +71,11 @@
     height: 580px;
     width: 100%;
     margin-bottom: 36px;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 24px;
+      height: 420px;
+    }
   }
 
   &__image {
@@ -66,6 +88,15 @@
     position: absolute;
     bottom: 32px;
     left: 32px;
+    width: 88px;
+    height: 88px;
+
+    @media (max-width: 1024px) {
+      width: 60px;
+      height: 60px;
+      bottom: 24px;
+      left: 24px;
+    }
   }
 
   &__item-title {
@@ -73,5 +104,10 @@
     font-size: 36px;
     line-height: 36px;
     letter-spacing: 0;
+
+    @media (max-width: 1024px) {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 }

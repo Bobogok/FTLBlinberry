@@ -21,7 +21,12 @@ const News = () => {
         <div className="news__elems">
           <Swiper
             slidesPerView={'auto'}
-            spaceBetween={24}
+            spaceBetween={11}
+            breakpoints={{
+              1025: {
+                spaceBetween: 24,
+              },
+            }}
             className="newsSwiper"
           >
             <SwiperSlide className="news__elem">

@@ -13,6 +13,10 @@
   &__left {
     width: 50%;
     margin-right: 20px;
+
+    @media (max-width: 1024px) {
+      margin-right: 16px;
+    }
   }
 
   &__left-title {
@@ -20,6 +24,12 @@
     font-size: 64px;
     line-height: 77px;
     margin-bottom: 22px;
+
+    @media (max-width: 1024px) {
+      font-size: 48px;
+      line-height: 58px;
+      margin-bottom: 8px;
+    }
   }
 
   &__left-subtitle {
@@ -43,6 +53,10 @@
       font-size: inherit;
       line-height: inherit;
     }
+
+    @media (max-width: 1024px) {
+      padding: 16px 32px;
+    }
   }
 
   &__right {
@@ -55,11 +69,22 @@
   &__elem {
     &:not(:last-child) {
       margin-bottom: 44px;
+
+      @media (max-width: 1024px) {
+        margin-bottom: 32px;
+      }
     }
   }
 
   &__icon {
     margin-bottom: 16px;
+    width: 88px;
+    height: 88px;
+
+    @media (max-width: 1024px) {
+      width: 61px;
+      height: 61px;
+    }
   }
 
   &__title {
@@ -68,6 +93,11 @@
     font-size: 36px;
     line-height: 36px;
     letter-spacing: 0em;
+
+    @media (max-width: 1024px) {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 
   &__subtitle {
@@ -75,5 +105,9 @@
     line-height: 30px;
     color: $grayText;
     letter-spacing: 0em;
+
+    @media (max-width: 1024px) {
+      line-height: 28px;
+    }
   }
 }

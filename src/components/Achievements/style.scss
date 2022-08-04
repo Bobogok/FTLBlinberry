@@ -12,6 +12,11 @@
     display: flex;
     align-items: flex-end;
     margin-bottom: 16px;
+
+    @media (max-width: 1024px) {
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
   }
 
   &__title {
@@ -19,6 +24,12 @@
     font-weight: 700;
     font-size: 64px;
     line-height: 77px;
+
+    @media (max-width: 1024px) {
+      font-size: 48px;
+      line-height: 58px;
+      max-width: 550px;
+    }
   }
 
   &__button {
@@ -35,6 +46,10 @@
       line-height: inherit;
       font-weight: inherit;
     }
+
+    @media (max-width: 1024px) {
+      padding: 16px 24px;
+    }
   }
 
   &__subtitle {
@@ -43,6 +58,10 @@
     margin-bottom: 40px;
     color: $grayText;
     letter-spacing: normal;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   &__elems {

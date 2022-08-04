@@ -10,7 +10,17 @@ const Circs = () => {
       <div className="circs__inner container">
         <h2 className="circs__title">Самые лояльные условия </h2>
         <div className="circs__elems">
-          <Swiper slidesPerView={3} spaceBetween={19} className="circsSwiper">
+          <Swiper
+            slidesPerView={'auto'}
+            spaceBetween={14}
+            breakpoints={{
+              1025: {
+                slidesPerView: 3,
+                spaceBetween: 19,
+              },
+            }}
+            className="circsSwiper"
+          >
             <SwiperSlide className="circs__elem">
               <div className="circs__elem-title">5%</div>
               <div className="circs__elem-subtitle">роялти</div>

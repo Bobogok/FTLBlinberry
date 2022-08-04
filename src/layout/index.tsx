@@ -7,6 +7,7 @@ import GooglePlayIcon from '../assets/img/svg/social/googlePlay.svg';
 import HuaweiStoreIcon from '../assets/img/svg/social/huaweiStore.svg';
 import MailIcon from '../assets/img/svg/social/mailIcon.svg';
 import TelegramWhiteIcon from '../assets/img/svg/social/telegramWhite.svg';
+import BurgerMenuIcon from '../assets/img/svg/menuBurger.svg';
 
 import VkBlackIcon from '../assets/img/svg/social/vkBlack.svg';
 import TelegramBlackIcon from '../assets/img/svg/social/telegramBlack.svg';
@@ -20,7 +21,7 @@ const Layout = ({ children }: any) => {
         <div className="header__inner container">
           {/* лого */}
           <div className="header__logo-wrapper">
-            <MainLogoIcon />
+            <MainLogoIcon className="header__logo" />
           </div>
 
           {/* меню дексктоп */}
@@ -53,6 +54,12 @@ const Layout = ({ children }: any) => {
           <button className="header__button">
             <span>контакты и поддержка</span>
             <TelegramHeaderIcon className="header__button-icon" />
+          </button>
+
+          {/* меню мобилки */}
+          <button className="header__button-tablet">
+            <span>меню</span>
+            <BurgerMenuIcon className="header__button-tablet-icon" />
           </button>
         </div>
       </header>

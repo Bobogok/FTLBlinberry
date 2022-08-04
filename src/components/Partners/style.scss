@@ -13,6 +13,12 @@
     font-size: 64px;
     line-height: 77px;
     margin-bottom: 40px;
+
+    @media (max-width: 1024px) {
+      font-size: 48px;
+      line-height: 58px;
+      margin-bottom: 24px;
+    }
   }
 
   &__elems {
@@ -22,6 +28,11 @@
       'c d d'
       'c e f';
     gap: 20px;
+    grid-template-columns: 33.33333%;
+
+    @media (max-width: 1024px) {
+      gap: 16px;
+    }
   }
 
   &__elem {
@@ -58,6 +69,10 @@
     margin-bottom: 32px;
     flex: 1 1 auto;
     letter-spacing: normal;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 27px;
+    }
   }
 
   &__elem-bottom {
@@ -75,6 +90,11 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 
   &__elem-city {
@@ -82,11 +102,21 @@
     font-size: 24px;
     line-height: 29px;
     color: $grayText;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 
   &__elem-avatar {
     width: 72px;
     height: 72px;
     object-fit: cover;
+
+    @media (max-width: 1024px) {
+      width: 48px;
+      height: 48px;
+    }
   }
 }
