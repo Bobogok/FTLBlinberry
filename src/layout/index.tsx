@@ -134,16 +134,18 @@ const Layout = ({ children }: any) => {
           </div>
 
           <div className="footer__contacts">
-            <div className="footer__phone-number">8 (937) 533-38-17</div>
-            <div className="footer__mails">
-              <a href="" className="footer__mails-link">
-                <MailIcon />
-                <span>franchising@blinbery.team</span>
-              </a>
-              <a href="" className="footer__mails-link">
-                <TelegramWhiteIcon />
-                <span>@blinberry</span>
-              </a>
+            <div className="footer__contacts-left">
+              <div className="footer__phone-number">8 (937) 533-38-17</div>
+              <div className="footer__mails">
+                <a href="" className="footer__mails-link">
+                  <MailIcon />
+                  <span>franchising@blinbery.team</span>
+                </a>
+                <a href="" className="footer__mails-link">
+                  <TelegramWhiteIcon />
+                  <span>@blinberry</span>
+                </a>
+              </div>
             </div>
             <div className="footer__buttons">
               <button className="footer__button">
