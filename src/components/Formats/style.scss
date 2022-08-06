@@ -162,6 +162,14 @@
     }
   }
 
+  &__carousel {
+    display: none;
+
+    @media (max-width: 428px) {
+      display: block;
+    }
+  }
+
   &__icon {
     position: absolute;
     bottom: 32px;

@@ -194,9 +194,14 @@
     }
   }
 
-  // мобльная карусель
+  // мобильная карусель
   &__carousel {
+    display: none;
     margin-bottom: 32px;
+
+    @media (max-width: 428px) {
+      display: block;
+    }
   }
 }
 

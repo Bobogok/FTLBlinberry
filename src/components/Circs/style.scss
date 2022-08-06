@@ -97,6 +97,7 @@
 }
 
 .circsSwiper {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -105,27 +106,27 @@
   padding: 0;
   z-index: 1;
 
-  &::before {
-    content: '';
-    z-index: 5;
-    position: absolute;
-    top: 0;
-    right: -2px;
-    height: 100%;
-    width: calc(80px + 24px);
-    background: linear-gradient(
-      270deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-  }
-
   @media (max-width: 1024px) {
     width: calc(100% + 80px + 24px);
     max-width: calc(1440px - 80px);
     overflow: clip;
     overflow-y: visible;
     height: 100%;
+
+    &::before {
+      content: '';
+      z-index: 5;
+      position: absolute;
+      top: 0;
+      right: -2px;
+      height: 100%;
+      width: calc(80px + 24px);
+      background: linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
   }
 
   @media (max-width: 428px) {
