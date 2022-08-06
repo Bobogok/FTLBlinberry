@@ -11,6 +11,9 @@ const News = () => {
       <div className="news__inner container">
         <div className="news__top">
           <h2 className="news__title">Новости о компании</h2>
+          <div className="news__subtitle-mobile">
+            Каждый день в жизни компании происходит что то новое
+          </div>
           <button className="news__button">
             <span>Подписаться на новости</span>
           </button>
@@ -21,9 +24,9 @@ const News = () => {
         <div className="news__elems">
           <Swiper
             slidesPerView={'auto'}
-            spaceBetween={11}
+            spaceBetween={12}
             breakpoints={{
-              1025: {
+              768: {
                 spaceBetween: 24,
               },
             }}

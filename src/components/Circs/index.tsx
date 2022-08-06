@@ -12,10 +12,13 @@ const Circs = () => {
         <div className="circs__elems">
           <Swiper
             slidesPerView={'auto'}
-            spaceBetween={14}
+            spaceBetween={12}
             breakpoints={{
-              1025: {
+              768: {
                 slidesPerView: 3,
+                spaceBetween: 14,
+              },
+              1024: {
                 spaceBetween: 19,
               },
             }}

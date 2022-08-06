@@ -151,9 +151,17 @@
       rgba(255, 255, 255, 0) 100%
     );
   }
+
+  @media (max-width: 428px) {
+    width: calc(100% + 16px);
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
-.swiper-slide:first-child {
+.achievementsSwiper .swiper-slide:first-child {
   margin-left: 3px;
 }
 

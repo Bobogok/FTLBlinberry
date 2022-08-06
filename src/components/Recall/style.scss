@@ -6,8 +6,21 @@
   padding-bottom: 74px;
   background-color: $graybgc;
 
+  @media (max-width: 428px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: $white;
+  }
+
   &__inner {
     display: flex;
+
+    @media (max-width: 428px) {
+      background-color: $graybgc;
+      border-radius: 40px;
+      padding: 32px 16px;
+      flex-direction: column;
+    }
   }
 
   &__left {
@@ -16,6 +29,12 @@
 
     @media (max-width: 1024px) {
       flex: 0 1 444px;
+    }
+
+    @media (max-width: 428px) {
+      flex: auto;
+      margin-right: 0px;
+      text-align: center;
     }
   }
 
@@ -29,6 +48,12 @@
       font-size: 48px;
       line-height: 58px;
     }
+
+    @media (max-width: 428px) {
+      font-size: 36px;
+      line-height: 43px;
+      margin-bottom: 8px;
+    }
   }
 
   &__subtitle {
@@ -41,6 +66,12 @@
     @media (max-width: 1024px) {
       line-height: 24px;
     }
+
+    @media (max-width: 428px) {
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 24px;
+    }
   }
 
   &__right {
@@ -50,6 +81,11 @@
     @media (max-width: 1024px) {
       max-width: 445px;
       width: 50%;
+    }
+
+    @media (max-width: 428px) {
+      width: 100%;
+      min-height: auto;
     }
   }
 
@@ -82,6 +118,10 @@
 
     @media (max-width: 1024px) {
       height: 156px;
+    }
+
+    @media (max-width: 428px) {
+      height: 240px;
     }
   }
 
@@ -124,6 +164,12 @@
       line-height: 29px;
       margin-bottom: 16px;
     }
+
+    @media (max-width: 428px) {
+      font-size: 36px;
+      line-height: 43px;
+      margin-bottom: 24px;
+    }
   }
 
   &__terms {
@@ -134,6 +180,11 @@
       font-size: 16px;
       line-height: 19px;
       text-align: center;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 12px;
+      line-height: 14px;
     }
   }
 
@@ -160,6 +211,19 @@
         content: '';
         position: absolute;
         width: 70%;
+        height: 1px;
+        background-color: $grayText;
+        bottom: -2px;
+        left: 67px;
+        right: 0;
+      }
+    }
+
+    @media (max-width: 428px) {
+      &::before {
+        content: '';
+        position: absolute;
+        width: 63.5%;
         height: 1px;
         background-color: $grayText;
         bottom: -2px;

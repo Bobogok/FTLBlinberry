@@ -5,7 +5,17 @@
   padding-top: 100px;
   padding-bottom: 100px;
 
+  @media (max-width: 428px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   &__inner {
+    @media (max-width: 428px) {
+      background-color: $graybgc;
+      border-radius: 40px;
+      padding: 32px 16px;
+    }
   }
 
   &__title {
@@ -18,6 +28,15 @@
       font-size: 48px;
       line-height: 58px;
       margin-bottom: 24px;
+    }
+
+    @media (max-width: 428px) {
+      font-size: 36px;
+      line-height: 43px;
+      margin-bottom: 24px;
+      text-align: center;
+      max-width: 70%;
+      margin: 0 auto 24px;
     }
   }
 
@@ -32,6 +51,10 @@
 
     @media (max-width: 1024px) {
       gap: 16px;
+    }
+
+    @media (max-width: 428px) {
+      display: block;
     }
   }
 
@@ -61,6 +84,15 @@
     &:nth-child(6) {
       grid-area: f;
     }
+
+    @media (max-width: 428px) {
+      min-height: auto;
+
+      &:not(:last-child) {
+        margin-bottom: 12px;
+        padding: 24px;
+      }
+    }
   }
 
   &__elem-text {
@@ -72,6 +104,10 @@
 
     @media (max-width: 1024px) {
       margin-bottom: 27px;
+    }
+
+    @media (max-width: 428px) {
+      margin-bottom: 24px;
     }
   }
 
@@ -117,6 +153,11 @@
     @media (max-width: 1024px) {
       width: 48px;
       height: 48px;
+    }
+
+    @media (max-width: 428px) {
+      width: 40px;
+      height: 40px;
     }
   }
 }
