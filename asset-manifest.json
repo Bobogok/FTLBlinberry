@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ftlblinberry/static/css/main.5a75dd3c.css",
+    "main.css": "/ftlblinberry/static/css/main.e0216673.css",
     "main.js": "/ftlblinberry/static/js/main.5b2c27e7.js",
     "static/media/DINRoundPro-Black.eot": "/ftlblinberry/static/media/DINRoundPro-Black.08f039d5106cd8267d24.eot",
     "static/media/DINRoundPro-Black.ttf": "/ftlblinberry/static/media/DINRoundPro-Black.1096041ed1fb32baf97b.ttf",
@@ -23,11 +23,11 @@
     "static/media/DINRoundPro-Black.woff2": "/ftlblinberry/static/media/DINRoundPro-Black.2f739c5e64ef6fa6e5b1.woff2",
     "static/media/DINRoundPro-Light.woff2": "/ftlblinberry/static/media/DINRoundPro-Light.b410b29d700a8bc43ef5.woff2",
     "index.html": "/ftlblinberry/index.html",
-    "main.5a75dd3c.css.map": "/ftlblinberry/static/css/main.5a75dd3c.css.map",
+    "main.e0216673.css.map": "/ftlblinberry/static/css/main.e0216673.css.map",
     "main.5b2c27e7.js.map": "/ftlblinberry/static/js/main.5b2c27e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a75dd3c.css",
+    "static/css/main.e0216673.css",
     "static/js/main.5b2c27e7.js"
   ]
 }
