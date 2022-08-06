@@ -65,4 +65,9 @@ main {
   padding-left: 60px;
   margin-right: auto;
   margin-left: auto;
+
+  @media (max-width: 428px) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }

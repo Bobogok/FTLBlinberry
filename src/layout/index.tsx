@@ -138,11 +138,11 @@ const Layout = ({ children }: any) => {
               <div className="footer__phone-number">8 (937) 533-38-17</div>
               <div className="footer__mails">
                 <a href="" className="footer__mails-link">
-                  <MailIcon />
+                  <MailIcon className="footer__mails-link-icon" />
                   <span>franchising@blinbery.team</span>
                 </a>
                 <a href="" className="footer__mails-link">
-                  <TelegramWhiteIcon />
+                  <TelegramWhiteIcon className="footer__mails-link-icon" />
                   <span>@blinberry</span>
                 </a>
               </div>
