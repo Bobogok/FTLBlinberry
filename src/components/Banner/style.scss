@@ -4,13 +4,26 @@
   // bem
   padding-top: 116px;
   background-color: $graybgc;
+  position: relative;
+  z-index: -1;
 
   @media (max-width: 1024px) {
     padding-top: 105px;
   }
 
+  @media (max-width: 428px) {
+    padding-top: 84px;
+  }
+
   &__top {
     text-align: center;
+
+    @media (max-width: 428px) {
+      position: absolute;
+      top: 43%;
+      left: 24px;
+      right: 24px;
+    }
   }
 
   &__title {
@@ -23,6 +36,13 @@
       font-size: 48px;
       line-height: 58px;
       margin-bottom: 24px;
+    }
+
+    @media (max-width: 428px) {
+      color: $white;
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 25px;
     }
   }
 
@@ -45,6 +65,14 @@
     @media (max-width: 1024px) {
       margin-bottom: 32px;
     }
+
+    @media (max-width: 428px) {
+      width: 85%;
+      padding: 16px 0px;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
   }
 
   &__image {
@@ -54,6 +82,11 @@
 
     @media (max-width: 1024px) {
       height: 496px;
+    }
+
+    @media (max-width: 428px) {
+      height: 827px;
+      border-radius: 16px;
     }
   }
 }
