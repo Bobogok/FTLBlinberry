@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MainLogoIcon from '../assets/img/svg/Logo.svg';
 import TelegramHeaderIcon from '../assets/img/svg/social/TelegramHeader.svg';
 import ArrowRightIcon from '../assets/img/svg/arrowRight.svg';
@@ -8,6 +8,9 @@ import HuaweiStoreIcon from '../assets/img/svg/social/huaweiStore.svg';
 import MailIcon from '../assets/img/svg/social/mailIcon.svg';
 import TelegramWhiteIcon from '../assets/img/svg/social/telegramWhite.svg';
 import BurgerMenuIcon from '../assets/img/svg/menuBurger.svg';
+import CloseMenuIcon from '../assets/img/svg/menuClose.svg';
+import MenuArrowRight from '../assets/img/svg/menuArrowRight.svg';
+import PhoneForwarded from '../assets/img/svg/phoneForwarded.svg';
 
 import VkBlackIcon from '../assets/img/svg/social/vkBlack.svg';
 import TelegramBlackIcon from '../assets/img/svg/social/telegramBlack.svg';
@@ -15,6 +18,12 @@ import YoutubeBlackIcon from '../assets/img/svg/social/youtubeBlack.svg';
 import './layout.scss';
 
 const Layout = ({ children }: any) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(true);
+
+  const handleMobileMenuOpen = () => {
+    setIsMobileMenuOpen((prev) => !prev);
+  };
+
   return (
     <>
       <header className="header">
@@ -25,25 +34,25 @@ const Layout = ({ children }: any) => {
           </div>
 
           {/* меню дексктоп */}
-          <nav className="header__menu">
-            <ul className="header__menu-elems">
-              <li className="header__menu-elem">
-                <a className="header__menu-link" href="#">
+          <nav className="header__nav">
+            <ul className="header__nav-elems">
+              <li className="header__nav-elem">
+                <a className="header__nav-link" href="#">
                   <span>этапы открытия</span>
                 </a>
               </li>
-              <li className="header__menu-elem">
-                <a className="header__menu-link" href="#">
+              <li className="header__nav-elem">
+                <a className="header__nav-link" href="#">
                   <span>форматы</span>
                 </a>
               </li>
-              <li className="header__menu-elem">
-                <a className="header__menu-link active" href="#">
+              <li className="header__nav-elem">
+                <a className="header__nav-link active" href="#">
                   <span>достижения</span>
                 </a>
               </li>
-              <li className="header__menu-elem">
-                <a className="header__menu-link" href="#">
+              <li className="header__nav-elem">
+                <a className="header__nav-link" href="#">
                   <span>новости</span>
                 </a>
               </li>
@@ -56,11 +65,85 @@ const Layout = ({ children }: any) => {
             <TelegramHeaderIcon className="header__button-icon" />
           </button>
 
-          {/* меню мобилки */}
-          <button className="header__button-tablet">
+          {/* кнопка меню мобилки */}
+          <button
+            className="header__button-menu"
+            onClick={handleMobileMenuOpen}
+          >
             <span>меню</span>
-            <BurgerMenuIcon className="header__button-tablet-icon" />
+            <BurgerMenuIcon className="header__button-menu-icon" />
           </button>
+
+          {/* мобильное меню */}
+          {isMobileMenuOpen && (
+            <div className="header__menu">
+              <div className="header__menu-inner container">
+                <div className="header__menu-top">
+                  {/* лого */}
+                  <div className="header__menu-logo-wrapper">
+                    <MainLogoIcon className="header__menu-logo" />
+                  </div>
+
+                  <button
+                    className="header__menu-button-mobile"
+                    onClick={handleMobileMenuOpen}
+                  >
+                    <span>меню</span>
+                    <CloseMenuIcon className="header__button-mobile-icon" />
+                  </button>
+                </div>
+
+                <ul className="header__content-elems">
+                  <li className="header__content-elem">
+                    <a href="" className="header__content-link">
+                      Этапы открытия
+                    </a>
+                    <MenuArrowRight className="header__content-icon" />
+                  </li>
+                  <li className="header__content-elem">
+                    <a href="" className="header__content-link">
+                      Форматы
+                    </a>
+                    <MenuArrowRight className="header__content-icon" />
+                  </li>
+                  <li className="header__content-elem">
+                    <a href="" className="header__content-link">
+                      Достижения
+                    </a>
+                    <MenuArrowRight className="header__content-icon" />
+                  </li>
+                  <li className="header__content-elem">
+                    <a href="" className="header__content-link">
+                      Новости
+                    </a>
+                    <MenuArrowRight className="header__content-icon" />
+                  </li>
+                  <li className="header__content-elem">
+                    <a href="" className="header__content-link">
+                      Отзывы
+                    </a>
+                    <MenuArrowRight className="header__content-icon" />
+                  </li>
+                </ul>
+
+                <div className="header__content-phones">
+                  <a href="" className="header__content-number">
+                    <PhoneForwarded className="header__content-number-icon" />8
+                    (937) 533-38-17
+                  </a>
+
+                  <a href="" className="header__content-telegram">
+                    Telegram
+                    <ArrowRightIcon className="header__content-telegram-icon" />
+                  </a>
+                </div>
+
+                <button className="header__content-button">
+                  <span>Оставить заявку</span>
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </header>
 
