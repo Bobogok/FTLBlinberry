@@ -4,7 +4,8 @@
   padding: 14px 0px;
   background-color: $graybgc;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  z-index: 5;
   top: 0;
   left: 0;
   right: 0;
@@ -317,7 +318,7 @@
       padding-top: 0px;
     }
 
-    @media (max-width: 428px) {
+    @media (max-width: 768px) {
       align-items: flex-start;
       flex-direction: column;
     }
@@ -327,13 +328,19 @@
     width: 197px;
     height: 44px;
     flex: 1 1 auto;
+    text-align: start;
+  }
+
+  &__logo-icon {
+    width: auto;
+    height: 100%;
   }
 
   &__apps {
     display: flex;
     align-items: center;
 
-    @media (max-width: 428px) {
+    @media (max-width: 768px) {
       width: 100%;
       margin-top: 32px;
     }

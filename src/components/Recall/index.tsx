@@ -3,7 +3,7 @@ import CorrectIcon from '../../assets/img/svg/correct.svg';
 
 import './style.scss';
 
-const Recall = () => {
+const Recall = ({ refProp }: any) => {
   const [isFormSend, setIsFormSend] = useState<boolean>(false);
 
   const sendForm = (e: any) => {
@@ -13,7 +13,7 @@ const Recall = () => {
   };
 
   return (
-    <div className="recall">
+    <div className="recall" ref={refProp}>
       <div className="container">
         <div className="recall__inner">
           <div className="recall__left">

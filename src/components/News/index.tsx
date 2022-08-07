@@ -34,7 +34,7 @@ const News = () => {
           >
             <SwiperSlide className="news__elem">
               <div className="news__elem-top">
-                <img src="./news/RBK.jpg" alt="" className="news__elem-img" />
+                <img src="./news/1.jpg" alt="" className="news__elem-img" />
                 <div className="news__elem-right">
                   <div className="news__elem-title">РБК Новости</div>
                   <div className="news__elem-date">15.07.2022</div>
@@ -54,7 +54,7 @@ const News = () => {
             </SwiperSlide>
             <SwiperSlide className="news__elem">
               <div className="news__elem-top">
-                <img src="./news/SPB.jpg" alt="" className="news__elem-img" />
+                <img src="./news/2.jpg" alt="" className="news__elem-img" />
                 <div className="news__elem-right">
                   <div className="news__elem-title">Деловой Петербург</div>
                   <div className="news__elem-date">15.07.2022</div>
@@ -73,11 +73,7 @@ const News = () => {
             </SwiperSlide>
             <SwiperSlide className="news__elem">
               <div className="news__elem-top">
-                <img
-                  src="./news/BuyBrand.jpg"
-                  alt=""
-                  className="news__elem-img"
-                />
+                <img src="./news/3.jpg" alt="" className="news__elem-img" />
                 <div className="news__elem-right">
                   <div className="news__elem-title">buybrand.ru</div>
                   <div className="news__elem-date">15.07.2022</div>
@@ -97,7 +93,7 @@ const News = () => {
             </SwiperSlide>
             <SwiperSlide className="news__elem">
               <div className="news__elem-top">
-                <img src="./news/Kupko.jpg" alt="" className="news__elem-img" />
+                <img src="./news/4.jpg" alt="" className="news__elem-img" />
                 <div className="news__elem-right">
                   <div className="news__elem-title">Евгений Купко</div>
                   <div className="news__elem-date">15.07.2022</div>
@@ -117,11 +113,7 @@ const News = () => {
             </SwiperSlide>
             <SwiperSlide className="news__elem">
               <div className="news__elem-top">
-                <img
-                  src="./news/Maslov.jpg"
-                  alt=""
-                  className="news__elem-img"
-                />
+                <img src="./news/5.jpg" alt="" className="news__elem-img" />
                 <div className="news__elem-right">
                   <div className="news__elem-title">Ростислав Маслов</div>
                   <div className="news__elem-date">15.07.2022</div>
@@ -141,11 +133,7 @@ const News = () => {
             </SwiperSlide>
             <SwiperSlide className="news__elem">
               <div className="news__elem-top">
-                <img
-                  src="./news/ProductMedia.jpg"
-                  alt=""
-                  className="news__elem-img"
-                />
+                <img src="./news/6.jpg" alt="" className="news__elem-img" />
                 <div className="news__elem-right">
                   <div className="news__elem-title">Продукт медиа</div>
                   <div className="news__elem-date">15.07.2022</div>

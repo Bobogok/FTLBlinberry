@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import MainLogoIcon from '../assets/img/svg/Logo.svg';
+import FooterLogo from '../assets/img/svg/footerLogo.svg';
 import TelegramHeaderIcon from '../assets/img/svg/social/TelegramHeader.svg';
 import ArrowRightIcon from '../assets/img/svg/arrowRight.svg';
 import AppStoreIcon from '../assets/img/svg/social/appStore.svg';
@@ -17,8 +18,8 @@ import TelegramBlackIcon from '../assets/img/svg/social/telegramBlack.svg';
 import YoutubeBlackIcon from '../assets/img/svg/social/youtubeBlack.svg';
 import './layout.scss';
 
-const Layout = ({ children }: any) => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(true);
+const Layout = ({ children, scrollToRecall }: any) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
   const handleMobileMenuOpen = () => {
     setIsMobileMenuOpen((prev) => !prev);
@@ -153,12 +154,7 @@ const Layout = ({ children }: any) => {
         <div className="footer__inner container">
           <div className="footer__top">
             <div className="footer__logo">
-              <img
-                width="auto"
-                height="auto"
-                src={require('../assets/img/LogoSecond.png')}
-                alt=""
-              />
+              <FooterLogo className="footer__logo-icon" />
             </div>
             <div className="footer__apps">
               <button className="footer__apps-button">

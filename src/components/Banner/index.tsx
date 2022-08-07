@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 
-const Banner = () => {
+const Banner = ({ scrollToRecall }: any) => {
   return (
     <div className="banner">
       <div className="banner__inner container">
@@ -10,11 +10,19 @@ const Banner = () => {
             Открой свой Блинбери, получай прибыль <br /> и стань частью большой
             истории
           </h1>
-          <button className="banner__button">
+          <button
+            type="button"
+            className="banner__button"
+            onClick={scrollToRecall}
+          >
             <span>Оставить заявку</span>
           </button>
         </div>
-        <img className="banner__image" src="./Banner.jpg" alt="" />
+        <img
+          className="banner__image"
+          src="./banner/bannerDesktop.jpg"
+          alt=""
+        />
       </div>
     </div>
   );

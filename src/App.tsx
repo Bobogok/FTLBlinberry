@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Layout from './layout';
 import Banner from './components/Banner';
 import Terms from './components/Terms';
@@ -15,11 +15,18 @@ import Recall from './components/Recall';
 import './assets/scss/style.scss';
 
 function App() {
+  const recall = useRef(null);
+
+  const scrollToRecall = () => {
+    // @ts-ignore
+    recall.current!.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  };
+
   return (
     <div>
       <Layout>
         {/* блок баннеров */}
-        <Banner />
+        <Banner scrollToRecall={scrollToRecall} />
 
         {/* блок сроков */}
         <Terms />
@@ -52,7 +59,7 @@ function App() {
         <Flex />
 
         {/* блок перезвона */}
-        <Recall />
+        <Recall refProp={recall} />
       </Layout>
     </div>
   );

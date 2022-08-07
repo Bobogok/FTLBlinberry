@@ -21,7 +21,7 @@ const Partners = () => {
                     партнер в Йошкар-Оле
                   </div>
                 </div>
-                <img className="partners__elem-avatar" src="./Artem.jpg" />
+                <img className="partners__elem-avatar" src="./rew/Alexey.jpg" />
               </div>
             </div>
             <div className="partners__elem">
@@ -34,7 +34,7 @@ const Partners = () => {
                   <div className="partners__elem-author">Дмитрий</div>
                   <div className="partners__elem-city">партнёр в Самаре</div>
                 </div>
-                <img className="partners__elem-avatar" src="./Dmitry.jpg" />
+                <img className="partners__elem-avatar" src="./rew/Dmitry.jpg" />
               </div>
             </div>
             <div className="partners__elem">
@@ -48,7 +48,7 @@ const Partners = () => {
                   <div className="partners__elem-author">Алексей</div>
                   <div className="partners__elem-city">партнёр в Пензе</div>
                 </div>
-                <img className="partners__elem-avatar" src="./Alexey.jpg" />
+                <img className="partners__elem-avatar" src="./rew/Alexey.jpg" />
               </div>
             </div>
             <div className="partners__elem">
@@ -64,7 +64,7 @@ const Partners = () => {
                     партнер в Нижнем Новгороде{' '}
                   </div>
                 </div>
-                <img className="partners__elem-avatar" src="./Elena.jpg" />
+                <img className="partners__elem-avatar" src="./rew/Elena.jpg" />
               </div>
             </div>
             <div className="partners__elem">
@@ -77,7 +77,10 @@ const Partners = () => {
                   <div className="partners__elem-author">Дмитрий</div>
                   <div className="partners__elem-city">партнёр в Москве</div>
                 </div>
-                <img className="partners__elem-avatar" src="./Dmitry2.jpg" />
+                <img
+                  className="partners__elem-avatar"
+                  src="./rew/Dmitry2.jpg"
+                />
               </div>
             </div>
             <div className="partners__elem">
@@ -90,7 +93,7 @@ const Partners = () => {
                   <div className="partners__elem-author">Никита</div>
                   <div className="partners__elem-city">партнёр в Пензе</div>
                 </div>
-                <img className="partners__elem-avatar" src="./Nikita.jpg" />
+                <img className="partners__elem-avatar" src="./rew/Nikita.jpg" />
               </div>
             </div>
           </div>

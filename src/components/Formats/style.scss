@@ -147,6 +147,8 @@
   }
 
   &__image {
+    border-radius: 16px;
+    overflow: hidden;
     object-fit: cover;
     height: 100%;
     width: 100%;

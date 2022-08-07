@@ -28,21 +28,33 @@ const Formats = () => {
         <div className="formats__items">
           <div className="formats__item">
             <div className="formats__image-wrapper">
-              <img src="./formatS.jpg" alt="" className="formats__image" />
+              <img
+                src="./formats/1Desktop.jpg"
+                alt=""
+                className="formats__image"
+              />
               <LabelSIcon className="formats__icon" />
             </div>
             <div className="formats__item-title">Малый</div>
           </div>
           <div className="formats__item">
             <div className="formats__image-wrapper">
-              <img src="./formatM.jpg" alt="" className="formats__image" />
+              <img
+                src="./formats/2Desktop.jpg"
+                alt=""
+                className="formats__image"
+              />
               <LabelMIcon className="formats__icon" />
             </div>
             <div className="formats__item-title">Средний</div>
           </div>
           <div className="formats__item">
             <div className="formats__image-wrapper">
-              <img src="./formatL.jpg" alt="" className="formats__image" />
+              <img
+                src="./formats/3Desktop.jpg"
+                alt=""
+                className="formats__image"
+              />
               <LabelLIcon className="formats__icon" />
             </div>
             <div className="formats__item-title">Большой</div>
@@ -58,7 +70,11 @@ const Formats = () => {
           >
             <SwiperSlide className="formats__elem">
               <div className="formats__image-wrapper">
-                <img src="./formatS.jpg" alt="" className="formats__image" />
+                <img
+                  src="./formats/1Desktop.jpg"
+                  alt=""
+                  className="formats__image"
+                />
                 <div className="formats__bottom">
                   <LabelSIcon className="formats__icon" />
                   <div className="formats__item-title">Малый</div>
@@ -67,7 +83,11 @@ const Formats = () => {
             </SwiperSlide>
             <SwiperSlide className="formats__elem">
               <div className="formats__image-wrapper">
-                <img src="./formatM.jpg" alt="" className="formats__image" />
+                <img
+                  src="./formats/2Desktop.jpg"
+                  alt=""
+                  className="formats__image"
+                />
                 <div className="formats__bottom">
                   <LabelMIcon className="formats__icon" />
                   <div className="formats__item-title">Средний</div>
@@ -76,7 +96,11 @@ const Formats = () => {
             </SwiperSlide>
             <SwiperSlide className="formats__elem">
               <div className="formats__image-wrapper">
-                <img src="./formatL.jpg" alt="" className="formats__image" />
+                <img
+                  src="./formats/3Desktop.jpg"
+                  alt=""
+                  className="formats__image"
+                />
                 <div className="formats__bottom">
                   <LabelLIcon className="formats__icon" />
                   <div className="formats__item-title">Большой</div>
