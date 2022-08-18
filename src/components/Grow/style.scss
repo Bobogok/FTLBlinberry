@@ -148,12 +148,14 @@
 }
 
 .growSwiper .swiper-slide:first-child {
-  margin-left: 3px;
+  margin-bottom: 3px;
 }
 
 .growSwiper .swiper-slide {
   height: auto;
   width: 630px;
+  margin-left: 4px;
+  margin-top: 4px;
 
   @media (max-width: 428px) {
     width: 424px;

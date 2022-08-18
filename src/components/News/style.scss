@@ -342,6 +342,8 @@
 .newsSwiper .swiper-slide {
   width: 413px;
   height: 492px;
+  margin-left: 4px;
+  margin-top: 4px;
 
   @media (max-width: 428px) {
     width: 300px;
