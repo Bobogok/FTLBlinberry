@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './style.scss';
 
-const Circs = () => {
+const Circs = ({ refProp }: any) => {
   return (
-    <div className="circs">
+    <div className="circs" ref={refProp}>
       <div className="circs__inner container">
         <h2 className="circs__title">Самые лояльные условия </h2>
         <div className="circs__elems">
@@ -20,7 +20,7 @@ const Circs = () => {
                 slidesPerView: 'auto',
                 spaceBetween: 19,
               },
-              1920: {
+              1200: {
                 slidesPerView: 3,
                 spaceBetween: 19,
               },

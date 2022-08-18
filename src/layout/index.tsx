@@ -18,7 +18,16 @@ import TelegramBlackIcon from '../assets/img/svg/social/telegramBlack.svg';
 import YoutubeBlackIcon from '../assets/img/svg/social/youtubeBlack.svg';
 import './layout.scss';
 
-const Layout = ({ children, scrollToRecall }: any) => {
+const Layout = ({
+  children,
+  scrollToRecall,
+  scrollToTerms,
+  scrollToFormats,
+  scrollToAchivments,
+  scrollToPartners,
+  scrollToNews,
+  scrollToCircs,
+}: any) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
   const handleMobileMenuOpen = () => {
@@ -38,24 +47,27 @@ const Layout = ({ children, scrollToRecall }: any) => {
           <nav className="header__nav">
             <ul className="header__nav-elems">
               <li className="header__nav-elem">
-                <a className="header__nav-link" href="#">
+                <span onClick={scrollToTerms} className="header__nav-link">
                   <span>этапы открытия</span>
-                </a>
+                </span>
               </li>
               <li className="header__nav-elem">
-                <a className="header__nav-link" href="#">
+                <span onClick={scrollToFormats} className="header__nav-link">
                   <span>форматы</span>
-                </a>
+                </span>
               </li>
               <li className="header__nav-elem">
-                <a className="header__nav-link active" href="#">
+                <span
+                  onClick={scrollToAchivments}
+                  className="header__nav-link active"
+                >
                   <span>достижения</span>
-                </a>
+                </span>
               </li>
               <li className="header__nav-elem">
-                <a className="header__nav-link" href="#">
+                <span onClick={scrollToNews} className="header__nav-link">
                   <span>новости</span>
-                </a>
+                </span>
               </li>
             </ul>
           </nav>
@@ -96,33 +108,63 @@ const Layout = ({ children, scrollToRecall }: any) => {
 
                 <ul className="header__content-elems">
                   <li className="header__content-elem">
-                    <a href="" className="header__content-link">
+                    <span
+                      onClick={() => {
+                        scrollToTerms();
+                        handleMobileMenuOpen();
+                      }}
+                      className="header__content-link"
+                    >
                       Этапы открытия
-                    </a>
+                    </span>
                     <MenuArrowRight className="header__content-icon" />
                   </li>
                   <li className="header__content-elem">
-                    <a href="" className="header__content-link">
+                    <span
+                      onClick={() => {
+                        scrollToFormats();
+                        handleMobileMenuOpen();
+                      }}
+                      className="header__content-link"
+                    >
                       Форматы
-                    </a>
+                    </span>
                     <MenuArrowRight className="header__content-icon" />
                   </li>
                   <li className="header__content-elem">
-                    <a href="" className="header__content-link">
+                    <span
+                      onClick={() => {
+                        scrollToAchivments();
+                        handleMobileMenuOpen();
+                      }}
+                      className="header__content-link"
+                    >
                       Достижения
-                    </a>
+                    </span>
                     <MenuArrowRight className="header__content-icon" />
                   </li>
                   <li className="header__content-elem">
-                    <a href="" className="header__content-link">
+                    <span
+                      onClick={() => {
+                        scrollToNews();
+                        handleMobileMenuOpen();
+                      }}
+                      className="header__content-link"
+                    >
                       Новости
-                    </a>
+                    </span>
                     <MenuArrowRight className="header__content-icon" />
                   </li>
                   <li className="header__content-elem">
-                    <a href="" className="header__content-link">
+                    <span
+                      onClick={() => {
+                        scrollToPartners();
+                        handleMobileMenuOpen();
+                      }}
+                      className="header__content-link"
+                    >
                       Отзывы
-                    </a>
+                    </span>
                     <MenuArrowRight className="header__content-icon" />
                   </li>
                 </ul>
@@ -161,51 +203,85 @@ const Layout = ({ children, scrollToRecall }: any) => {
                 <span>Приложение</span>
                 <ArrowRightIcon className="footer__apps-button-icon" />
               </button>
-              <AppStoreIcon className="footer__apps-icon" />
-              <GooglePlayIcon className="footer__apps-icon" />
-              <HuaweiStoreIcon className="footer__apps-icon" />
+              <a
+                className="footer__apps-link"
+                href="https://apps.apple.com/ru/app/%D0%B1%D0%BB%D0%B8%D0%BD%D0%B1%D0%B5%D1%80%D0%B8/id1508294248"
+              >
+                <AppStoreIcon className="footer__apps-icon" />
+              </a>
+              <a
+                className="footer__apps-link"
+                href="https://play.google.com/store/apps/details?id=com.blinbery.client&hl=ru"
+              >
+                <GooglePlayIcon className="footer__apps-icon" />
+              </a>
+              <a
+                className="footer__apps-link"
+                href="https://appgallery.huawei.com/app/C105779333"
+              >
+                <HuaweiStoreIcon className="footer__apps-icon" />
+              </a>
             </div>
           </div>
 
           <div className="footer__navigation">
             <ul className="footer__navigation-elems">
               <li className="footer__navigation-elem">
-                <a href="" className="footer__navigation-link">
+                <span
+                  onClick={scrollToTerms}
+                  className="footer__navigation-link"
+                >
                   Этапы открытия
-                </a>
+                </span>
               </li>
               <li className="footer__navigation-elem">
-                <a href="" className="footer__navigation-link">
+                <span
+                  onClick={scrollToFormats}
+                  className="footer__navigation-link"
+                >
                   Форматы
-                </a>
+                </span>
               </li>
               <li className="footer__navigation-elem">
-                <a href="" className="footer__navigation-link">
+                <span
+                  onClick={scrollToAchivments}
+                  className="footer__navigation-link"
+                >
                   Достижения
-                </a>
+                </span>
               </li>
               <li className="footer__navigation-elem">
-                <a href="" className="footer__navigation-link">
+                <span
+                  onClick={scrollToNews}
+                  className="footer__navigation-link"
+                >
                   Новости
-                </a>
+                </span>
               </li>
               <li className="footer__navigation-elem">
-                <a href="" className="footer__navigation-link">
+                <a
+                  target="_blank"
+                  href="https://xn--90aamkcop0a.xn--p1ai/"
+                  className="footer__navigation-link"
+                >
                   Сайт
                 </a>
               </li>
               <li className="footer__navigation-elem">
-                <a href="" className="footer__navigation-link">
+                <a
+                  onClick={scrollToPartners}
+                  className="footer__navigation-link"
+                >
                   Партнёры
                 </a>
               </li>
               <li className="footer__navigation-elem">
-                <a href="" className="footer__navigation-link">
+                <a onClick={scrollToCircs} className="footer__navigation-link">
                   Условия
                 </a>
               </li>
               <li className="footer__navigation-elem">
-                <a href="" className="footer__navigation-link">
+                <a href="#" className="footer__navigation-link">
                   Вакансии
                 </a>
               </li>

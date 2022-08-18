@@ -4,9 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './style.scss';
 
-const Achievements = () => {
+const Achievements = ({ refProp }: any) => {
   return (
-    <div className="achievements">
+    <div className="achievements" ref={refProp}>
       <div className="container">
         <div className="achievements__inner">
           <div className="achievements__top">

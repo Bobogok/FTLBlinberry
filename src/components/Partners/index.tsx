@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.scss';
 
-const Partners = () => {
+const Partners = ({ refProp }: any) => {
   return (
-    <div className="partners">
+    <div className="partners" ref={refProp}>
       <div className="container">
         <div className="partners__inner">
           <h2 className="partners__title">Партнёры о работе с нами</h2>
@@ -21,7 +21,7 @@ const Partners = () => {
                     партнер в Йошкар-Оле
                   </div>
                 </div>
-                <img className="partners__elem-avatar" src="./rew/Alexey.jpg" />
+                <img className="partners__elem-avatar" src="./rew/Artem.jpg" />
               </div>
             </div>
             <div className="partners__elem">

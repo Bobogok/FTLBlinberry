@@ -7,9 +7,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './style.scss';
 
-const Formats = () => {
+const Formats = ({ refProp }: any) => {
   return (
-    <div className="formats container">
+    <div className="formats container" ref={refProp}>
       <div className="formats__inner">
         <div className="formats__top">
           <h2 className="formats__title">

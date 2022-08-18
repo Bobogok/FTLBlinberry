@@ -7,10 +7,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './style.scss';
 
-const Terms = () => {
+const Terms = ({ refProp }: any) => {
   return (
     <div className="terms">
-      <div className="terms__inner container">
+      <div className="terms__inner container" ref={refProp}>
         <div className="terms__left">
           <h2 className="terms__left-title">
             Получи реальные сроки открытия блинной

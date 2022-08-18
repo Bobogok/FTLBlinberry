@@ -8,6 +8,7 @@ const Recall = ({ refProp }: any) => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
   const [isFormSend, setIsFormSend] = useState<boolean>(false);
@@ -16,6 +17,11 @@ const Recall = ({ refProp }: any) => {
     setIsFormSend((prev) => !prev);
 
     // куда отправлять?
+  };
+
+  const onResetForm = () => {
+    setIsFormSend(false);
+    reset();
   };
 
   return (
@@ -85,7 +91,7 @@ const Recall = ({ refProp }: any) => {
                 <div className="recall__complete-title">
                   Форма успешно отправлена
                 </div>
-                <button className="recall__button">
+                <button onClick={onResetForm} className="recall__button">
                   <span>Вернуться в начало</span>
                 </button>
               </div>

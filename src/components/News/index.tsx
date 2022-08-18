@@ -5,9 +5,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './style.scss';
 
-const News = () => {
+const News = ({ refProp }: any) => {
   return (
-    <div className="news">
+    <div className="news" ref={refProp}>
       <div className="news__inner container">
         <div className="news__top">
           <h2 className="news__title">Новости о компании</h2>
@@ -47,10 +47,10 @@ const News = () => {
                 производство. В планах «БлинБери» - <br /> увеличить сеть в
                 десять раз...
               </p>
-              <button className="news__elem-button">
+              <a href="https://t.me/kupko_group" className="news__elem-button">
                 <span>Читать</span>
                 <ArrowRight className="news__elem-icon" />
-              </button>
+              </a>
             </SwiperSlide>
             <SwiperSlide className="news__elem">
               <div className="news__elem-top">
@@ -66,10 +66,10 @@ const News = () => {
                 заработала волгоградская сеть блинных "БлинБери". Компания уже
                 открыла три точки и собственное производ...
               </p>
-              <button className="news__elem-button">
+              <a href="https://t.me/kupko_group" className="news__elem-button">
                 <span>Читать</span>
                 <ArrowRight className="news__elem-icon" />
-              </button>
+              </a>
             </SwiperSlide>
             <SwiperSlide className="news__elem">
               <div className="news__elem-top">
@@ -86,10 +86,10 @@ const News = () => {
                 В«Блинбери» открывает по франшизе вдвое больше точек, чем
                 собственных. Собственник сети рассказал о возможностях развития.
               </p>
-              <button className="news__elem-button">
+              <a href="https://t.me/kupko_group" className="news__elem-button">
                 <span>Читать</span>
                 <ArrowRight className="news__elem-icon" />
-              </button>
+              </a>
             </SwiperSlide>
             <SwiperSlide className="news__elem">
               <div className="news__elem-top">
@@ -106,10 +106,10 @@ const News = () => {
                 Недавно мы открыли новую блинную на Тверской. Все в режиме
                 нон-стоп, чтобы попасть под грант...
               </p>
-              <button className="news__elem-button">
+              <a href="https://t.me/kupko_group" className="news__elem-button">
                 <span>Читать</span>
                 <ArrowRight className="news__elem-icon" />
-              </button>
+              </a>
             </SwiperSlide>
             <SwiperSlide className="news__elem">
               <div className="news__elem-top">
@@ -126,10 +126,10 @@ const News = () => {
                 😒 Столько хайпа во круг Макдональдса «Вкусно и точка»… А вот
                 что я думаю на этот счет...
               </p>
-              <button className="news__elem-button">
+              <a href="https://t.me/kupko_group" className="news__elem-button">
                 <span>Читать</span>
                 <ArrowRight className="news__elem-icon" />
-              </button>
+              </a>
             </SwiperSlide>
             <SwiperSlide className="news__elem">
               <div className="news__elem-top">
@@ -147,10 +147,10 @@ const News = () => {
                 Петербурге до 30 кафе. Компания считает петербургский рынок
                 интересным и, несмотря на высокую конкуренцию...
               </p>
-              <button className="news__elem-button">
+              <a href="https://t.me/kupko_group" className="news__elem-button">
                 <span>Читать</span>
                 <ArrowRight className="news__elem-icon" />
-              </button>
+              </a>
             </SwiperSlide>
           </Swiper>
         </div>

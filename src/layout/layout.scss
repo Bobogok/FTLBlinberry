@@ -61,6 +61,7 @@
 
   &__nav-link,
   &__button {
+    cursor: pointer;
     color: $main;
     font-weight: 500;
     font-size: 16px;
@@ -338,6 +339,22 @@
     height: 100%;
   }
 
+  &__apps-link {
+    display: block;
+
+    &:not(:last-child) {
+      margin-right: 16px;
+
+      @media (max-width: 1024px) {
+        margin-right: 24px;
+      }
+
+      @media (max-width: 428px) {
+        margin-right: 14px;
+      }
+    }
+  }
+
   &__apps {
     display: flex;
     align-items: center;
@@ -375,18 +392,6 @@
   &__apps-icon {
     width: 48px;
     height: 48px;
-
-    &:not(:last-child) {
-      margin-right: 16px;
-
-      @media (max-width: 1024px) {
-        margin-right: 24px;
-      }
-
-      @media (max-width: 428px) {
-        margin-right: 14px;
-      }
-    }
   }
 
   &__navigation {
@@ -430,6 +435,7 @@
   }
 
   &__navigation-link {
+    cursor: pointer;
     display: block;
     color: $white;
     padding: 16px;

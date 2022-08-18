@@ -7,7 +7,7 @@ const Banner = ({ scrollToRecall }: any) => {
       <div className="banner__inner container">
         <div className="banner__top">
           <h1 className="banner__title">
-            Открой свой Блинбери, получай прибыль <br /> и стань частью большой
+            Открой свои Блинбери, получай прибыль <br /> и стань частью большой
             истории
           </h1>
           <button
